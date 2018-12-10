@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+
+int lance_de(int t)
+{
+  int val;
+  printf("C'est au tour du joueur %d\n",t); 
+  val=(rand()%6)+1;
+  printf("Le joueur %d fait un %d !\n",t,val);
+  return val;
+}
+
+void tour (int *t,int val,int joueur[4][4],case_e jeu[60])
+{
+  int s,c=1;
+  if(val==6 ){
+    if(joueur[*t][3]==-1){
+      do{printf("sortir un pion ?(1 pour oui");
+	scanf("%d",&s);}while(s<0||s>1);    
+      while(s=1){
+	if(joueur[*t][c]=-1){
+	  joueur[*t][c]=(*t-1)*14;
+	  s=0;
+	}else c++;      
+      }
+    }
+  }else{
+    *t=(*t+1)%4;
+  }
+}

@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+/*
+int commence(int nbjoueur)
+{
+  int t=(rand()%nbjoueur)+1;
+  printf("Le joueur %d commence\n",t);
+  return t;
+}
+
+int fnbjoueur()
+{
+  int nbj;
+  printf("Combien de joueur ? :");
+  scanf("%d", &nbj);
+ 
+  while((nbj > 4)&&(nbj < 0))
+    {
+      printf("le nombre de joueur maximum est de 4\n");
+      printf("Combien de joueur ?");
+      scanf("%d", &nbj);
+    }
+  return nbj;
+}
+*/
+int fnbchevaux()
+{
+  int nbc;
+  printf("combien de pions ? :");
+  scanf("%d",&nbc);
+  while((nbc > 4)||(nbc < 0))
+    {
+      printf("le nombre de pions maximum est de 4\n");
+      printf("Combien de pions ?");
+      scanf("%d", &nbc);
+      return(nbc);
+    }
+}
+/*
+int init_jeu(int *Plateau,int *joueurs,int *nbjoueur,int *nbchevaux)
+{
+  *nbjoueur=fnbjoueur();
+  *nbchevaux=fnbchevaux();
+}
+*/
+  

@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdbool.h>
+#include"init.c"
+/*
+typedef struct
+{
+  bool tour[56];
+  bool ligne[6];
+  bool ligne2[6];
+  bool ligne3[6];
+  bool ligne4[6];
+}deplacementplateau;
+
+typedef enum {JAUNE,ROUGE,VERT,BLEU} couleur_j;
+typedef enum {JOUEUR1,JOUEUR2,JOUEUR3,JOUEUR4} nom_j;
+
+typedef struct
+{
+  int numpion;
+  bool ecurie;
+  int principal;
+  int secondaire;
+}
+pion_j;
+
+typedef struct
+{
+  couleur_j couleur;
+  nom_j nom;
+  pion_j pion[4];
+}
+joueur;
+*/
+int fnbchevaux()

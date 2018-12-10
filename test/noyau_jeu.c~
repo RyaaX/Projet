@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdbool.h>
+//#include"init.h"
+
+int fnbchevaux()
+{
+  int nbc;
+  do{
+    printf("le nombre de pions maximum est de 4\n");
+    printf("Combien de pions ? :");
+    scanf("%d", &nbc);
+  }while((nbc > 4)||(nbc < 1));
+  return(nbc);
+}
+
+int main()
+{
+  srand(time(NULL));
+  //deplacementplateau Plateau;
+  //joueur joueurs[4]; 
+  printf("%d\n",fnbchevaux());
+
+
+}
